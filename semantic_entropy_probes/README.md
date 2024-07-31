@@ -12,9 +12,7 @@ We save model hidden states from SE generation runs (as in [model implementation
 
 We also support saving probes (essentially a trained logistic regression model) as a pickle file to the `models` (created upon running) folder. You may run inference with the probe as you wish - it should just be a minor adaptation from the notebook that you should run the probe (SEP or Acc. Pr.) on concatenated hidden states on some particular token positions (e.g. SLT or TBG) and it will output labels (or logits) predicting how semantically certain a model is and how likely a model outputs faithful answers.
 
-For tutorial purposes, we have provided [example runs](https://wandb.ai/jiatongg/public_semantic_uncertainty) for Llama-2-7B model (short-form generations), which is the same as in our paper.
-
-Kindly refer to [our paper](https://arxiv.org/abs/2406.15927) for terminologies and other technical details.
+Kindly refer to our paper for terminologies and other technical details.
 
 ## Notebook Structure
 
@@ -29,14 +27,14 @@ This notebook is arranged in sections:
 ## Citation
 
 ```
-@misc{kossen2024semanticentropyprobesrobust,
+@misc{XXXX-8,
       title={Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs}, 
-      author={Jannik Kossen and Jiatong Han and Muhammed Razzak and Lisa Schut and Shreshth Malik and Yarin Gal},
+      author={XXXX-1 and XXXX-2 and XXXX-3 and XXXX-4 and XXXX-5 and XXXX-6},
       year={2024},
-      eprint={2406.15927},
-      archivePrefix={arXiv},
+      eprint={XXXX-7},
+      archivePrefix={XXXX-9},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.15927}, 
+      url={XXXX-7}, 
 }
 ```
 

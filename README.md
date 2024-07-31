@@ -1,6 +1,6 @@
 # Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs
 
-Jannik Kossen*, Jiatong Han*, Muhammed Razzak*, Lisa Schut, Shreshth Malik, Yarin Gal
+XXXX-1*, XXXX-2*, XXXX-3*, XXXX-4, XXXX-5, XXXX-6
 
 | **[Abstract](#Abstract)**
 | **[Citation](#Citation)**
@@ -9,7 +9,7 @@ Jannik Kossen*, Jiatong Han*, Muhammed Razzak*, Lisa Schut, Shreshth Malik, Yari
 | **[Tutorial](#Tutorial)**
 | **[Codebase](#Codebase)**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.15927-b31b1b.svg)](https://arxiv.org/abs/2406.15927)
+[![XXXX-9](XXXX-7)](XXXX-7)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)](https://pytorch.org/get-started/locally/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -20,14 +20,14 @@ We propose semantic entropy probes (SEPs), a cheap and reliable method for uncer
 
 ## Citation
 ```
-@misc{kossen2024semanticentropyprobesrobust,
+@misc{XXXX-8,
       title={Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs}, 
-      author={Jannik Kossen and Jiatong Han and Muhammed Razzak and Lisa Schut and Shreshth Malik and Yarin Gal},
+      author={XXXX-1 and XXXX-2 and XXXX-3 and XXXX-4 and XXXX-5 and XXXX-6},
       year={2024},
-      eprint={2406.15927},
-      archivePrefix={arXiv},
+      eprint={XXXX-7},
+      archivePrefix={XXXX-9},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.15927}, 
+      url={XXXX-7}, 
 }
 ```
 
@@ -101,12 +101,12 @@ To obtain a barplot similar to those of the paper, open the the iPython notebook
 
 We retrieve saved model hidden states on two token positions (TBG, SLT) with which we train linear probes to predict model semantic uncertainty and further predict correctness.
 
-See [this notebook](./semantic_entropy_probes/latent-probe.ipynb) for step-by-step guide on training SEPs, which also contains handy tools for data loading, visualizations, and computing baselines. 
+See [this notebook](./semantic_entropy_probes/train-latent-probe.ipynb) for step-by-step guide on training SEPs, which also contains handy tools for data loading, visualizations, and computing baselines. 
 
 ## Codebase
 ### Repository Structure
 
-* Code to generate the semantic entropy is contained in the semantic uncertainty folder, and adapted from the repo for [semantic uncertainty](https://github.com/jlko/semantic_uncertainty). With in this, a standard SE generation run executes the following three scripts in order:
+* Code to generate the semantic entropy is contained in the semantic uncertainty folder. With in this, a standard SE generation run executes the following three scripts in order:
 
     1. `generate_answers.py`: Sample responses (and their likelihods/hidden states) from the models for the questions.
     2. `compute_uncertainties.py`: Compute uncertainty metrics given responses.
